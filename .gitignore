@@ -1,0 +1,9 @@
+*/Library
+*/Temp
+*/ProjectSettings
+*/obj
+
+*.csproj
+*.sln
+*.meta
+*.unity
