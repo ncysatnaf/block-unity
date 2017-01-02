@@ -3,6 +3,9 @@
 */ProjectSettings
 */obj
 
+*/Assets/Standard Assets
+*/Assets/Editor
+
 *.csproj
 *.sln
 *.meta
