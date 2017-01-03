@@ -11,8 +11,13 @@ public class MoveGuy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        float vecY = this.transform.position.y;
         float vecX = this.transform.position.x;
         float vecZ = this.transform.position.z;
-        this.transform.position = new Vector3(vecX += Input.GetAxis("Horizontal")*mult, 1, vecZ += Input.GetAxis("Vertical")*mult);
+        this.transform.position = new Vector3(vecX += Input.GetAxis("Horizontal")*mult, vecY, vecZ += Input.GetAxis("Vertical")*mult);
+
+        if(Input.GetButton("Jump")){
+            this.transform.Translate(0, mult, 0);
+        }
 	}
 }
